@@ -41,7 +41,7 @@ public class UserController {
 
     @GetMapping("/getuserprofile")
     public ResponseEntity<UserDto> getUserProfileInfo(Authentication authentication){
-        UserDto response = userService.getUserProfileInformation(authentication);
+        UserDto response = userService.getUserProfileInformation(authentication.getName());
         return ResponseEntity.ok(response);
     }
 }

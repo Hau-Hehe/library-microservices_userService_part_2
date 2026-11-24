@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: library-user-service
+
+jwt:
+  secret:
+  expiration:

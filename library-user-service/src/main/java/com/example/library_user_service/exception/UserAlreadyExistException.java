@@ -1,7 +1,7 @@
 package com.example.library_user_service.exception;
 
 public class UserAlreadyExistException extends RuntimeException{
-    public UserAlreadyExistException(String email) {
-        super(email);
+    public UserAlreadyExistException(String message) {
+        super(message);
     }
 }
